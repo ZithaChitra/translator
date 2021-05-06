@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+	<form action="" method="post" class="col s12"">
+		{{ form.hidden_tag() }}
+		<div class="row">
+			<div class="input-field col s12 m6 l6">
+				{{ form.input_text.label }}
+				{{ form.input_text(class="materialize-textarea") }}
+			</div>
+
+			<div class="input-field col s12 m6 l6">
+				{{ form.output_text.label }}
+				{{ form.output_text(class="materialize-textarea") }}
+			</div>
+
+			<div class="section col s12">
+				{{ form.submit(class="btn hoverable teal lighten-1") }}
+			</div>
+		</div>
+	</form>
+{% endblock content %}
+		
